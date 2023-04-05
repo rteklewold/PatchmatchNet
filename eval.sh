@@ -24,3 +24,7 @@ python eval.py --scan_list ./lists/dtu/test.txt --input_folder=$DTU_TESTING --ou
 #CUSTOM_TESTING="/home/custom/"
 #python eval.py --input_folder=$CUSTOM_TESTING --output_folder=$CUSTOM_TESTING --checkpoint_path $CHECKPOINT_FILE \
 #--num_views 10 --image_max_dim 2048 --geo_mask_thres 5 --photo_thres 0.5 "$@"
+
+python eval.py --input_folder="C:/Users/rteklewold/Desktop/env/codes/Sing_PatchmatchNet/data/scan23" --output_folder="C:/Users/rteklewold/Desktop/env/codes/Sing_PatchmatchNet/data_output/scan23" --checkpoint_path "./PatchmatchNet/checkpoints/params_000007.ckpt" --num_views 5
+
+python eval.py --input_folder="C:/Users/rteklewold/Desktop/env/codes/Sing_PatchmatchNet/data/Family" --output_folder="C:/Users/rteklewold/Desktop/env/codes/Sing_PatchmatchNet/data_output/Family" --checkpoint_path "./PatchmatchNet/checkpoints/params_000007.ckpt" --num_views 7

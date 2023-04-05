@@ -193,6 +193,8 @@ class PatchmatchNet(nn.Module):
         Returns:
             output tuple of PatchMatchNet, containing refined depthmap, depth patchmatch, and photometric confidence.
         """
+        # assert len(images) == intrinsics.size()[1], "Different number of images and intrinsic matrices"
+        # assert len(images) == extrinsics.size()[1], 'Different number of images and extrinsic matrices'
         assert len(images) == intrinsics.size()[1], "Different number of images and intrinsic matrices"
         assert len(images) == extrinsics.size()[1], 'Different number of images and extrinsic matrices'
         images, intrinsics, orig_height, orig_width = adjust_image_dims(images, intrinsics)
